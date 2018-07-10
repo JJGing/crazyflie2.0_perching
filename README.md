@@ -16,7 +16,7 @@ source ~/.bashrc
 ```bash
 sudo groupadd plugdev 
 ```
-##### 在/etc/udev/rules.d创建一个99-crazyradio.rules文件
+##### 在/etc/udev/rules.d创建一个99-crazyradio.rules文件,并打开权限
 ```bash
 sudo chmod 777 /etc/udev/rules.d
 ```
