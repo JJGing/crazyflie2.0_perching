@@ -4,11 +4,12 @@
 
 ```bash
 mkdir -p ~/crazyflie2.0_ws/src
+cd ~/crazyflie2.0_ws/src
 git clone https://github.com/JJGing/crazyflie2.0_perching.git
 cd ..
 rosdep install --from-path src --ignore-src
 catkin_make
-echo "source ～/crazyflie2.0_ws/devel/setup.bash" >> ~/.bashrc 
+echo "source ~/crazyflie2.0_ws/devel/setup.bash" >> ~/.bashrc 
 source ~/.bashrc
 ```
 
@@ -18,7 +19,7 @@ sudo groupadd plugdev
 ```
 ##### 在/etc/udev/rules.d创建一个99-crazyradio.rules文件,并打开权限
 ```bash
-sudo chmod 777 /etc/udev/rules.d
+sudo gedit /etc/udev/rules.d/99-crazyradiio.rules
 ```
 ##### 创建99-crazyradiio.rules文件，并写入以下代码
 ```
